@@ -1,0 +1,13 @@
+[package]
+name = "self-modifying-malware"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+memmap2 = "0.5"
+object = "0.28"
+anyhow = "1.0"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+static_vcruntime = "2.0"
